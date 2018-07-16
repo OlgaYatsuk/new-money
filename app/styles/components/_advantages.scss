@@ -1,0 +1,30 @@
+.advantages {
+  margin-top: 97px;
+  background: url("../images/union.svg") no-repeat center;
+  height: 741px;
+  padding-top: 97px;
+
+  .flex-wrapper {
+    margin-top: 238px;
+  }
+}
+
+.advantages__item {
+  text-align: center;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 21px;
+
+  p {
+    margin-top: 38px;
+    max-width: 205px;
+  }
+
+  span {
+    display: block;
+    font-weight: 300;
+    font-size: 12px;
+    width: 106%;
+  }
+}
+

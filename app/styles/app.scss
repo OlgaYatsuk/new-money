@@ -1,0 +1,15 @@
+@import '../../node_modules/sanitize.scss/sanitize';
+@import '../../node_modules/reset-css/_reset';
+@import './lib/index';
+
+@import 'base/color-base';
+@import 'main';
+@import 'base/_text-styles';
+@import 'layouts/header';
+@import 'components/advantages';
+@import 'layouts/footer';
+@import 'components/join-new';
+@import 'components/conditions';
+@import 'components/steps';
+@import 'components/registration';
+@import 'components/form';

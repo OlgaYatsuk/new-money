@@ -1,0 +1,26 @@
+.conditions {
+  padding-top: 76px;
+
+  .flex-wrapper {
+    margin-top: 73px;
+  }
+}
+
+.condition__item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  > div {
+    margin-top: 30px;
+  }
+}
+
+.condition__item-text {
+  max-width: 175px;
+  margin: 38px auto 0;
+  line-height: 30px;
+  color: #4F4D59;
+}
+

@@ -1,0 +1,29 @@
+.join {
+  padding-top: 90px;
+  height: 710px;
+  background: url("../images/join.png") no-repeat 90% 114px;
+}
+
+.join__title {
+  font-size: 36px;
+  color: $dark-grey;
+  line-height: 40px;
+  width: 555px;
+  font-weight: 800;
+}
+
+.join__caption {
+  margin-top: 32px;
+  font-size: 24px;
+  line-height: 27px;
+}
+
+.join__text {
+  color: $dark-grey;
+  margin-top: 22px;
+  line-height: 21px;
+
+  strong {
+    display: block;
+  }
+}
