@@ -1,182 +1,128 @@
 <!doctype html>
-<html class="no-js" lang="ua">
-
+<html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-  <title>New money</title>
-  <meta name="description" content=""/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <link rel="apple-touch-icon" href="icon.png"/>
-  <link rel="stylesheet" href="./styles/app.css"/>
-  <!-- BEGIN scripts -->
-  <script async defer type="text/javascript" src="scripts/vendor.js"></script>
-  <script async defer type="text/javascript" src="scripts/app.js"></script>
-  <!-- END scripts -->
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">-->
+    <title>New credit</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,500,600,700,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
 <body>
-<!--[if lte IE 9]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
-  your browser</a> to improve your experience and security.</p>
-<![endif]-->
 <!--begin header-->
 <div class="header-wrapper">
-  <header class="header">
-    <a href="index.html"><img src="images/logo-new.svg" alt="logo"></a>
-    <nav class="navigation">
-      <a href="#" class="navigation__link">Умови фінансування</a>
-      <a href="#" class="navigation__link">Юридична інформація</a>
-      <a href="#" class="navigation__link">FAQ</a>
-      <a href="#" class="navigation__link">Блоги</a>
-      <a href="#" class="navigation__link">Контакти</a>
-    </nav>
-    <a href="tel:+08008000000" class="phone">0 800 800 00 00</a>
-    <input type="checkbox" id="language"/>
-    <label for="language" class="language-toggler"></label>
-    <button class="user">
-      <img src="images/user.svg">
-      <span>Увійти</span>
-    </button>
-  </header>
+    <header class="header">
+        <div class="burger">
+            <img src="img/burger.png" alt="menu">
+        </div>
+        <a href="index.html" class="header-logo"><img src="img/logo.svg" alt="logo"></a>
+        <nav class="page-nav">
+            <a href="index.html" class="page-nav__link"><img src="img/home-ic.svg" alt="home"></a>
+            <a href="contacts.html" class="page-nav__link"><img src="img/mail-ic.svg" alt="mail"></a>
+            <a href="info.html" class="page-nav__link"><img src="img/study-ic.svg" alt="study"></a>
+            <a href="conditions.html" class="page-nav__link"><img src="img/info-ic.svg" alt="info"></a>
+            <a href="#" class="page-nav__link"><img src="img/faq-ic.svg" alt="faq"></a>
+        </nav>
+        <a href="tel:+0800301008" class="phone">0  800  301  008</a>
+        <div class="language">
+            <a href="#" class="language__option is-active">Укр</a>
+            <a href="#" class="language__option">Рус</a>
+        </div>
+        <a href="profile.html" class="user">
+            <img src="img/login-ic.svg">
+        </a>
+    </header>
+    <h1 class="header__slogan">Нові можливості для твоєї кредитної карти</h1>
 </div>
 <!--end header-->
-
-<main class="container">
-  <section class="join">
-    <h2 class="join__title">Нові можливості для твоєї кредитної карти</h2>
-    <h4 class="join__caption">Без застави чи поручителів</h4>
-    <p class="join__text">Надає швидке і просте рішення для отримання кредиту.<strong> Заповни онлайн-заявку і отримай
-      гроші.</strong></p>
-    <form class="credit-form">
-      <div class="credit-form__buttons">
-        <button class="credit-form__toogler js-credit-toogler">Перший кредит</button>
-        <button class="credit-form__toogler credit-form__toogler--disabled js-credit-toogler">Повторний кредит</button>
-      </div>
-      <div class="credit-form__ammount">
-        <span class="credit-form__sum-choose">Оберіть суму</span><span class="credit-form__sum-range">(від 500 до 3000 грн.)</span>
-        <input type="text" placeholder="грн." class="credit-form__input js-credit-input">
-        <input type="range" class="credit-form__range js-credit-range" value="0" max="3000" step="0.01">
-        <button class="minus"><img src="images/minus.svg" alt=""></button>
-        <button class="plus"><img src="images/plus.svg" alt=""></button>
-        <a href="registration.html"class="credit-form__submit">відправити заявку</a>
-      </div>
-      <div class="credit-form__footer">
-        <span>Всього до сплати:</span>
-        <span class="credit-form__total"><strong>XXX,XX</strong> грн.</span>
-      </div>
-    </form>
-  </section>
-
-  <section class="conditions">
-    <h4 class="section-title">Умови</h4>
-    <div class="flex-wrapper">
-      <div class="condition__item">
-        <img src="images/condition-1.svg" alt="condition" class="condition__item-img">
-        <div>
-          <h6 class="caption">Вік</h6>
-          <p class="condition__item-text">Вік від <strong>18</strong> до <strong>70 </strong>років</p>
-        </div>
-      </div>
-      <div class="condition__item">
-        <img src="images/condition-2.svg" alt="condition" class="condition__item-img">
-        <div>
-          <h6 class="caption">Документи</h6>
-          <p class="condition__item-text">Наявність <strong>дійсного посвідчення </strong> особи.</p>
-        </div>
-      </div>
-      <div class="condition__item">
-        <img src="images/condition-3.svg" alt="condition" class="condition__item-img">
-        <div>
-          <h6 class="caption">Дохід</h6>
-          <p class="condition__item-text"><strong>Стабільне</strong> джерело доходу.</p>
-        </div>
-      </div>
-      <div class="condition__item">
-        <img src="images/condition-4.svg" alt="condition" class="condition__item-img">
-        <div>
-          <h6 class="caption">Відповідальність</h6>
-          <p class="condition__item-text">Фінансова <strong>відповідальність</strong></p>
-        </div>
-      </div>
+<main class="main container">
+    <div class="bull-words">
+        <p>Нові можливості для твоєї кредитної карти</p>
     </div>
-  </section>
+    <div class="credit-form">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#get-money" role="tab" aria-controls="home" aria-selected="true">Отримати гроші</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#pay-credit" role="tab" aria-controls="profile" aria-selected="false">Сплатити кредит</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="get-money" role="tabpanel" aria-labelledby="home-tab">
+            <div class="credit-form__ammount">
+                <span class="credit-form__sum-choose">Оберіть суму</span><span class="credit-form__sum-range">(від 500 до 3000 грн.)</span>
+                <input type="text" placeholder="грн." class="credit-form__input js-credit-input">
+                <input type="range" class="form-control-range credit-form__range js-credit-range" value="500" min="500" max="3000" step="0.01" id="formControlRange">
+                <button class="minus"><img src="img/minus.svg" alt=""></button>
+                <button class="plus"><img src="img/plus.svg" alt=""></button>
+            </div>
+            <a href="register-1.html"class="credit-form__submit">відправити заявку</a>
+            <div class="credit-form__footer">
+                <span>Всього до сплати:</span>
+                <span class="credit-form__total"><strong>XXX,XX</strong> грн.</span>
+            </div>
+        </div>
 
-  <section class="advantages">
-    <h4 class="section-title">Переваги</h4>
-    <div class="flex-wrapper">
-      <div class="advantages__item">
-        <p>Заповнення заявки онлайн</p>
-      </div>
-      <div class="advantages__item">
-        <p>Без застави  і поручителів</p>
-        <p>Прозорість<span>(немає прихованих комісій)</span></p>
-      </div>
-      <div class="advantages__item">
-        <p>Без застави  і поручителів</p>
-      </div>
+        <div class="tab-pane fade" id="pay-credit" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="credit-form__ammount">
+                <span class="credit-form__sum-choose">Оберіть суму</span><span class="credit-form__sum-range">(від 500 до 3000 грн.)</span>
+                <input type="text" placeholder="грн." class="credit-form__input js-credit-input">
+                <input type="range" class="form-control-range credit-form__range js-credit-range" value="500" min="500" max="3000" step="0.01" id="formControlRange">
+                <button class="minus"><img src="img/minus.svg" alt=""></button>
+                <button class="plus"><img src="img/plus.svg" alt=""></button>
+            </div>
+            <a href="register-1.html" class="credit-form__submit">відправити заявку</a>
+            <div class="credit-form__footer">
+                <span>Всього до сплати:</span>
+                <span class="credit-form__total"><strong>XXX,XX</strong> грн.</span>
+            </div>
+        </div>
     </div>
-  </section>
-
-  <section class="steps">
-    <h4 class="section-title">Як отримати?</h4>
-    <div class="flex-wrapper">
-      <div class="steps__item">
-        <img src="images/step-1.svg" alt="" class="steps__item-img">
-        <div class="steps__item-info">
-          <h6 class="caption"><span class="steps__item-count">1.</span>Заполните заявку</h6>
-          <p class="steps__item-text">Процесс занимает несколько минут, а при повторном обращении - несколько кликов</p>
-        </div>
-      </div>
-      <div class="steps__item">
-        <img src="images/step-2.svg" alt="" class="steps__item-img">
-        <div class="steps__item-info">
-          <h6 class="caption"><span class="steps__item-count">2.</span>Дождитесь решения</h6>
-          <p class="steps__item-text">Система принимает решение моментально и отправляет его вам в SMS и на email</p>
-        </div>
-      </div>
-      <div class="steps__item">
-        <img src="images/step-3.svg" alt="" class="steps__item-img">
-        <div class="steps__item-info">
-          <h6 class="caption"><span class="steps__item-count">3.</span>Получите деньги</h6>
-          <p class="steps__item-text">При положительном решении система мгновенно перечисляет деньги на вашу
-            карточку</p>
-        </div>
-      </div>
     </div>
-  </section>
 </main>
-
-<!--begin of footer-->
 <footer class="footer">
-  <div class="footer-top">
-    <a href="index.html"><img src="images/logo-new.svg" alt="logo"></a>
-    <nav class="navigation navigation--footer">
-      <a href="" class="navigation__link">Умови фінансування</a>
-      <a href="" class="navigation__link">Юридична інформація</a>
-      <a href="" class="navigation__link">FAQ</a>
-      <a href="" class="navigation__link">Блоги</a>
-      <a href="" class="navigation__link">Контакти</a>
-    </nav>
-    <div class="social">
-      <a href="#" class="social__img"><img src="images/google.svg" alt="google"/></a>
-      <a href="#" class="social__img"><img src="images/facebook.svg" alt="facebook"/></a>
+    <div class="container">
+      <a href="mailto:info@novikredyty.com.ua" class="mail">Написати нам <img src="img/mail.svg" alt="mail"></a>
+        <a href="index.html" class="col-sm-2 logo"><img src="img/logo.svg" alt="logo"></a>
+        <div class="col-sm-7">
+            <nav class="page-nav">
+                <a href="index.html" class="page-nav__link"><img src="img/home-ic.svg" alt="home"></a>
+                <a href="contacts.html" class="page-nav__link"><img src="img/mail-ic.svg" alt="mail"></a>
+                <a href="info.html" class="page-nav__link"><img src="img/study-ic.svg" alt="study"></a>
+                <a href="conditions.html" class="page-nav__link"><img src="img/info-ic.svg" alt="info"></a>
+                <a href="#" class="page-nav__link"><img src="img/faq-ic.svg" alt="faq"></a>
+            </nav>
+            <div class="footer-bottom">
+                <div class="footer-list">
+                    <h6 class="footer-list__heading">Адреса:</h6>
+                    <p class="footer-list__info">02068, м. Київ, проспект Петра Григоренка, 5-А</p>
+                </div>
+                <div class="footer-list">
+                    <h6 class="footer-list__heading">Написати нам:</h6>
+                    <a href="mailto:info@novikredyty.com.ua" class="footer-list__info">info@novikredyty.com.ua</a>
+                </div>
+                <div class="footer-list">
+                    <h6 class="footer-list__heading">Юридична адреса:</h6>
+                    <p class="footer-list__info capitalize">ТОВ "фінансова компанія "нові кредити"</p>
+                    <p class="footer-list__info"> ЄДРПОУ 42152351</p>
+                </div>
+            </div>
+        </div>
+        <a href="tel:+0800301008" class="phone col-sm-3">0  800  301  008</a>
+        <a href="#" class="user col-sm-1">
+            <img src="img/login-ic.svg">
+        </a>
     </div>
-    <a href="tel:+08008000000" class="phone">0 800 800 00 00</a>
-  </div>
-  <div class="contacts">
-    <div class="contacts__item">
-      <h6 class="contacts__item-title">Адреса:</h6>
-      <p class="contacts__item-text">м. Одеса, вул. Гімназична, буд.21</p>
-      <p class="contacts__item-text">Понеділок-п'ятниця: 9.00 – 18.00`</p>
-    </div>
-    <div class="contacts__item">
-      <h6 class="contacts__item-title">Написати нам:</h6>
-      <a href="mailto:/info@novikrediti.ua" class="contacts__mail">info@novikrediti.ua</a>
-    </div>
-  </div>
 </footer>
-<!--end of footer block-->
-
+<script src="./js/jquery.min.js"></script>
+<script src="./js/main.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<!-- production-версия, оптимизированная для размера и скорости-->
 </body>
 </html>

@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">-->
+  <title>New credit</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,500,600,700,900" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+<!--begin header-->
+<div class="header-wrapper">
+  <header class="header">
+    <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+    <nav class="page-nav">
+      <a href="index.html" class="page-nav__link"><img src="img/home-ic.svg" alt="home"></a>
+      <a href="contacts.html" class="page-nav__link"><img src="img/mail-ic.svg" alt="mail"></a>
+      <a href="info.html" class="page-nav__link"><img src="img/study-ic.svg" alt="study"></a>
+      <a href="conditions.html" class="page-nav__link"><img src="img/info-ic.svg" alt="info"></a>
+      <a href="#" class="page-nav__link"><img src="img/faq-ic.svg" alt="faq"></a>
+    </nav>
+    <a href="tel:+0800301008" class="phone">0 800 301 008</a>
+    <div class="language">
+      <a href="#" class="language__option is-active">Укр</a>
+      <a href="#" class="language__option">Рус</a>
+    </div>
+    <a href="#" class="user">
+      <img src="img/login-ic.svg">
+    </a>
+  </header>
+  <h1 class="header__slogan">Нові можливості для твоєї кредитної карти</h1>
+</div>
+<!--end header-->
+
+<main class="profile profile-1">
+  <div class="row">
+    <div class="col-sm-3 right-part">
+      <div class="user-photo"></div>
+      <ul class="nav nav-pills">
+        <li class="active"><a data-toggle="pill" href="#my-credit">Мой кредит</a></li>
+        <li><a data-toggle="pill" href="#my-data">Мои данные</a></li>
+        <li><a data-toggle="pill" href="#bonus">Бонусы</a></li>
+        <li><a data-toggle="pill" href="#cards">Мои карты</a></li>
+        <li><a data-toggle="pill" href="#history">История кредитов</a></li>
+        <li><a data-toggle="pill" href="#pay">Проплатить кредит</a></li>
+        <li><a data-toggle="pill" href="#prolangate">Продлить кредит</a></li>
+      </ul>
+    </div>
+    <div class="col-sm left-part">
+      <div class="tab-content">
+        <div id="my-credit" class="tab-pane fade in active">
+          <p class="profile-label form-label">Номер договора</p>
+          <p class="strong-text">000001</p>
+          <p class="profile-label form-label">cумма договора</p>
+          <p class="strong-text">3 000</p>
+          <p class="profile-label form-label">дата получения</p>
+          <p class="strong-text">15.08.2018</p>
+          <p class="profile-label form-label">дата погашения</p>
+          <div class="row">
+            <p class="strong-text">15.11.2018</p>
+            <a href="#prolangate" class="register-button register-button--prolangate">продлить</a>
+          </div>
+          <p class="profile-label form-label">сумма к погашению</p>
+          <p class="strong-text">3 200</p>
+          <a href="#" class="register-button">Оплатить кредит</a>
+        </div>
+        <div id="my-data" class="tab-pane fade">
+          <form action="">
+            <div class="row photo-upload">
+              <div class="user-photo"><img src="" alt=""></div>
+              <input type="file" accept="image/*" class="register-button custom-file-input" id="customFile">
+              <div>
+              <label class="register-button" for="customFile">Загрузить</label>
+              <p class="upload-format">1,5 Мб в формате  *.jpeg, *.png, *.tif, *.bmp</p>
+              </div>
+              </div>
+              <fieldset class="col-sm-7 register-form">
+                <input type="text" class="form-input" placeholder="Прізвище">
+                <input type="text" class="form-input" placeholder="Ім'я">
+                <input type="text" class="form-input" placeholder="По-батькові">
+                <div class="row">
+                  <input type="date" class="form-input col-sm" placeholder="Дата народження">
+                  <input type="text" class="form-input col-sm" placeholder="ІПН">
+                </div>
+                <div class="row">
+                  <input type="text" class="form-input col-sm" placeholder="Телефон">
+                  <input type="text" class="form-input col-sm" placeholder="Email">
+                </div>
+                <div class="row">
+                  <input type="text" class="form-input col-sm" placeholder="Серия">
+                  <input type="text" class="form-input col-sm" placeholder="Номер">
+                </div>
+                <div class="row">
+                  <input type="text" class="form-input col-sm" placeholder="Кем выдан">
+                  <input type="data" class="form-input col-sm" placeholder="Дата выдачи">
+                </div>
+              </fieldset>
+          </form>
+        </div>
+        <div id="bonus" class="tab-pane fade">
+          <h3>Бонусы</h3>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.</p>
+        </div>
+        <div id="cards" class="tab-pane fade">
+          <h3>Мои карты</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+            aperiam.</p>
+        </div>
+        <div id="history" class="tab-pane fade">
+          <h3>История кредитов</h3>
+          <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        </div>
+        <div id="pay" class="tab-pane fade">
+          <h3>Menu 3</h3>
+          <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        </div>
+        <div id="prolangate" class="tab-pane fade">
+          <h3>Menu 3</h3>
+          <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="footer">
+    <div class="container">
+      <a href="mailto:info@novikredyty.com.ua" class="mail">Написати нам <img src="img/mail.svg" alt="mail"></a>
+        <a href="index.html" class="col-sm-2 logo"><img src="img/logo.svg" alt="logo"></a>
+        <div class="col-sm-7">
+            <nav class="page-nav">
+                <a href="index.html" class="page-nav__link"><img src="img/home-ic.svg" alt="home"></a>
+                <a href="contacts.html" class="page-nav__link"><img src="img/mail-ic.svg" alt="mail"></a>
+                <a href="info.html" class="page-nav__link"><img src="img/study-ic.svg" alt="study"></a>
+                <a href="conditions.html" class="page-nav__link"><img src="img/info-ic.svg" alt="info"></a>
+                <a href="#" class="page-nav__link"><img src="img/faq-ic.svg" alt="faq"></a>
+            </nav>
+            <div class="footer-bottom">
+                <div class="footer-list">
+                    <h6 class="footer-list__heading">Адреса:</h6>
+                    <p class="footer-list__info">02068, м. Київ, проспект Петра Григоренка, 5-А</p>
+                </div>
+                <div class="footer-list">
+                    <h6 class="footer-list__heading">Написати нам:</h6>
+                    <a href="mailto:info@novikredyty.com.ua" class="footer-list__info">info@novikredyty.com.ua</a>
+                </div>
+                <div class="footer-list">
+                    <h6 class="footer-list__heading">Юридична адреса:</h6>
+                    <p class="footer-list__info capitalize">ТОВ "фінансова компанія "нові кредити"</p>
+                    <p class="footer-list__info"> ЄДРПОУ 42152351</p>
+                </div>
+            </div>
+        </div>
+        <a href="tel:+0800301008" class="phone col-sm-3">0  800  301  008</a>
+        <a href="#" class="user col-sm-1">
+            <img src="img/login-ic.svg">
+        </a>
+    </div>
+</footer>
+
+<script src="./js/jquery.min.js"></script>
+<script src="./js/main.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+<!-- production-версия, оптимизированная для размера и скорости-->
+</body>
+</html>
