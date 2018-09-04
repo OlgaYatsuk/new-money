@@ -51,6 +51,7 @@
     count = count < 1 ? 1 : count;
     $creditRange.val(count);
     $creditInput.attr('value', count).addClass('is-changed');
+    $creditInput.val(count);
     return false;
   }
 
@@ -59,6 +60,7 @@
     count = count < 1 ? 1 : count;
     $creditRange.val(count);
     $creditInput.attr('value', count).addClass('is-changed');
+    $creditInput.val(count);
     return false;
   }
 })(jQuery);
@@ -107,5 +109,17 @@ $('select').each(function(){
     $styledSelect.removeClass('active');
     $list.hide();
   });
-
 });
+
+$('.burger').on('click', showBurger);
+$('.close').on('click', hideBurger);
+
+function showBurger(e) {
+  e.preventDefault();
+  $('.burger-menu').slideDown(400);
+}
+
+function hideBurger(e) {
+  e.preventDefault();
+  $('.burger-menu').slideUp(400);
+}
