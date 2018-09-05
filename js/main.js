@@ -123,3 +123,9 @@ function hideBurger(e) {
   e.preventDefault();
   $('.burger-menu').slideUp(400);
 }
+
+$('#surname').on('click', showField);
+
+function showField() {
+  $('#js-hidden').fadeIn();
+}
