@@ -129,3 +129,10 @@ $('#surname').on('click', showField);
 function showField() {
   $('#js-hidden').fadeIn();
 }
+
+$('.language__option').on('click', langToggler);
+
+function langToggler() {
+  $('.language__option').removeClass('is-active');
+  $(this).addClass('is-active');
+}
