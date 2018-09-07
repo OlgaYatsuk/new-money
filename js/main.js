@@ -141,14 +141,14 @@ function langToggler() {
 $(window).resize(function() {
   if ($(window).width() < 800) {
     $('.js-pill').on('click', hideMenu);
-    $('.profile .user').on('click', showMenu);
+    $('.profile .signed').on('click', showMenu);
+    $('.signed-back').on('click', hideMenu);
 
     function hideMenu() {
       $('.right-part').slideUp();
     }
 
-    function showMenu(e) {
-      e.preventDefault();
+    function showMenu() {
       $('.right-part').slideDown();
     }
   }
