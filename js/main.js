@@ -136,3 +136,20 @@ function langToggler() {
   $('.language__option').removeClass('is-active');
   $(this).addClass('is-active');
 }
+
+
+$(window).resize(function() {
+  if ($(window).width() < 800) {
+    $('.js-pill').on('click', hideMenu);
+    $('.profile .user').on('click', showMenu);
+
+    function hideMenu() {
+      $('.right-part').slideUp();
+    }
+
+    function showMenu(e) {
+      e.preventDefault();
+      $('.right-part').slideDown();
+    }
+  }
+});
