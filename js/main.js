@@ -138,7 +138,7 @@ function langToggler() {
 }
 
 
-$(window).resize(function() {
+
   if ($(window).width() < 800) {
     $('.js-pill').on('click', hideMenu);
     $('.profile .signed').on('click', showMenu);
@@ -152,4 +152,3 @@ $(window).resize(function() {
       $('.right-part').slideDown();
     }
   }
-});
