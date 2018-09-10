@@ -158,6 +158,7 @@ function langToggler() {
 
 function hideCheckbox() {
   $('.register-form').find($('.surname')).slideUp();
+  $('#js-hidden').slideUp();
 }
 
 function showCheckbox() {
@@ -173,3 +174,22 @@ $('.toggler').click(function () {
     $('.register-button').attr('disabled', true); //disable input
   }
 });
+
+$('#id-check').on('change', idCheck);
+$('#pass-check').on('change', passCheck);
+
+function idCheck() {
+
+  if ($(this).is(':checked')) {
+    $('.id').slideDown();
+    $('.passport').hide();
+  }
+}
+
+function passCheck() {
+
+  if ($(this).is(':checked')) {
+    $('.passport').slideDown();
+    $('.id').hide();
+  }
+}

@@ -101,21 +101,32 @@
           </div>
           <div class="row">
             <label class="register-radio">Паспорт
-              <input type="radio" checked="checked" name="pass">
+              <input type="radio" checked id="pass-check" name="pass">
               <span class="checkmark"></span>
             </label>
-            <label class="register-radio">ID карта
-              <input type="radio" checked="checked" name="pass">
+            <label class="register-radio" >ID карта
+              <input type="radio"  id="id-check" name="pass">
               <span class="checkmark"></span>
             </label>
           </div>
+          <div class="id">
+          <div class="row">
+            <input type="text" class="form-input col-sm" placeholder="Дійсний до">
+            <div class="id-num"><input type="text" class="form-input col-sm" placeholder="№ запису">
+            <div class="questions">?
+              <div class="questions__tooltip">номер ID card має складатись з 9 цифр</div></div>
+            </div>
+          </div>
+          </div>
+          <div class="passport">
           <div class="row">
             <input type="text" class="form-input col-sm" placeholder="Серия">
             <input type="text" class="form-input col-sm" placeholder="Номер">
           </div>
           <div class="row">
             <input type="text" class="form-input col-sm" placeholder="Кем выдан">
-            <input type="data" class="form-input col-sm" placeholder="Дата выдачи">
+            <input type="date" class="form-input col-sm" placeholder="Дата выдачи">
+          </div>
           </div>
           <label class="form-checkbox">Согласен на обработку персональных данных
             <input type="checkbox" class="toggler">
