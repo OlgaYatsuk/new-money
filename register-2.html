@@ -81,7 +81,7 @@
       </div>
       <div class="col-sm-8">
         <form action="" class="register-form">
-          <div class="family">
+          <div class="family select">
             <select class="custom-select">
               <option value="hide">Семейное положение:</option>
               <option value="married">Одружений</option>
@@ -90,7 +90,15 @@
               <option value="law-marriage">Цивільний шлюб</option>
             </select>
           </div>
-          <input type="text" class="form-input" placeholder="Образование">
+          <div class="education select">
+            <select class="custom-select">
+              <option value="hide">Образование:</option>
+              <option value="married">Одружений</option>
+              <option value="not-married">Неодружений</option>
+              <option value="divorced">Розлучений</option>
+              <option value="law-marriage">Цивільний шлюб</option>
+            </select>
+          </div>
           <div class="row">
             <label class="register-radio">Паспорт
               <input type="radio" checked="checked" name="pass">
@@ -110,10 +118,10 @@
             <input type="data" class="form-input col-sm" placeholder="Дата выдачи">
           </div>
           <label class="form-checkbox">Согласен на обработку персональных данных
-            <input type="checkbox">
+            <input type="checkbox" class="toggler">
             <span class="checkmark"></span>
           </label>
-          <a href="thanks.html" class="register-button">Далі</a>
+          <input type="submit" disabled class="register-button" value="Далі">
         </form>
       </div>
     </div>

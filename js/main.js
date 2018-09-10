@@ -127,7 +127,7 @@ function hideBurger(e) {
 $('#surname').on('click', showField);
 
 function showField() {
-  $('#js-hidden').fadeIn();
+  $('#js-hidden').slideToggle(300);
 }
 
 $('.language__option').on('click', langToggler);
@@ -152,3 +152,24 @@ function langToggler() {
       $('.right-part').slideDown();
     }
   }
+
+  $('#male').on('click', hideCheckbox);
+  $('#female').on('click', showCheckbox);
+
+function hideCheckbox() {
+  $('.register-form').find($('.surname')).slideUp();
+}
+
+function showCheckbox() {
+  $('.register-form').find($('.surname')).slideDown();
+}
+
+$('.toggler').click(function () {
+  if ($(this).is(':checked')) {
+
+    $('.register-button').removeAttr('disabled'); //enable input
+
+  } else {
+    $('.register-button').attr('disabled', true); //disable input
+  }
+});
