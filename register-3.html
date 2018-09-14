@@ -11,7 +11,8 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,500,600,700,900" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
 <!--begin header-->
@@ -71,29 +72,63 @@
 
 <!--end header-->
 
-<main class="info">
+<main class="register address">
   <div class="container">
-    <div class="col-sm-9">
-  <h2 class="page-heading">Юридична інформація</h2>
-  <h5 class="heading">Положення про конфіденційність</h5>
-  <h6 class="strong-text">1. Загальні положення</h6>
-  <p class="text">ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ «МАНІВЕО ШВИДКА ФІНАНСОВА ДОПОМОГА» код ЄДРПОУ – 38569246, місцезнаходження: 01015, м. Київ, вулиця Лейпцизька, будинок 15 Б, поверх перший) (далі – «Moneyveo») цим положенням «Про конфіденційність для користувачів сайту www.moneyveo.ua» (надалі – Положення) встановлює принципи отримання персональних даних Користувачів сайту www.moneyveo.ua (надалі – Сайт), а також види персональних даних, які збираються, використовуються, обробляються та захищаються Моneyveo.</p>
-  <h6 class="strong-text">1. Особливості інформації, яка обробляється</h6>
-  <article class="text">
-    Moneyveo отримує знеособлену загальну інформацію за результатами підрахунку таких даних, як: загальна кількість відвідувань Сайту, кількість відвідувань кожної сторінки Сайту тощо. Ця інформація використовується виключно з метою оцінки рейтингу Сайту, подальшого покращення його роботи та вдосконалення процесу надання фінансових послуг.
-    <p>Моneyveo здійснює збір та обробку наступних даних Користувачів під час користування ними Сайтом:</p>
-    <br>2.1 даних, що надаються Користувачам як при заповненні реєстраційних форм Сайту, так і в процесі користування Сайтом;
-    <br>2.2 файли cookie;
-    <br>2.3 IP-адреси;
-    <br>2.4 параметри та налаштування інтернет-браузерів.
-    <br>Moneyveo включає дані Користувача до бази персональних даних інтернет-користувачів з моменту, коли він уперше починає користуватися Сайтом, а також постійно увесь період, протягом якого користується послугами Moneyveo. Строк зберігання даних становить період, протягом якого Користувач користується послугами Moneyveo, а також п'ять наступних років після закриття аккаунту (Особистого кабінету) на Сайті та завершення користування послугами Moneyveo.
-    <p>Moneyveo здійснює обробку персональних даних Користувача з метою належного надання Користувачу послуг (ідентифікація, аутентифікація, авторизація, відновлення паролю, надсилання інформаційних матеріалів за підпискою Користувача, відповідей на запити та листи Користувача, а також для інших дій, в яких з’являється необхідність для належного надання послуг).</p>
-    <p>Moneyveo використовує знеособлені дані для таргетингу рекламних та/або інформаційних матеріалів за віком, статтю, іншими даними; для проведення статистичних досліджень; будь-якими іншими способами.</p>
-   <p>Moneyveo має право передати персональні дані, базу персональних даних, до якої включені персональні дані Користувача, повністю або частково третім особам без повідомлення про це Користувачеві у наступних випадках: особам, у ведення, володіння або власність яких передано Сайт; особам, що є пов’язаними/афілійованими з Moneyveo; новому власнику Moneyveo для оброблення з метою, передбаченою даною Угодою; іншим користувачам Сайту (як фізичним, так і юридичним особам), якщо на Сайті передбачено відповідний функціонал.</p>
-  </article>
-  </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <h6 class="page-heading">Регистрация</h6>
+        <p class="heading">Адрес регистрации и проживания</p>
+      </div>
+      <form action="" class="register-form col-sm-4">
+        <p class="form-label">Адресс регистрации</p>
+        <input type="text" class="form-input" placeholder="Область">
+        <div class="row long-row">
+          <input type="text" class="form-input col-sm" placeholder="Район">
+          <input type="text" class="form-input col-sm" placeholder="Город">
+        </div>
+        <div class="row long-row">
+        <input type="text" class="form-input col-sm" placeholder="Телефон">
+        <input type="text" class="form-input col-sm" placeholder="Улица">
+      </div>
+        <div class="row long-row">
+        <input type="text" class="form-input col-sm" placeholder="Телефон">
+        <input type="text" class="form-input col-sm" placeholder="Дом">
+      </div>
+        <div class="row long-row">
+          <input type="text" class="form-input col-sm" placeholder="Корпус">
+          <input type="text" class="form-input col-sm" placeholder="Квартира">
+        </div>
+        <label class="form-checkbox">Адреса реєстрації співпадає з фактичною
+          <input type="checkbox" id="surname" class="js-check">
+          <span class="checkmark"></span>
+        </label>
+
+        <div class="js-checked-block">
+        <p class="form-label">Адресс фактического проживания</p>
+        <input type="text" class="form-input" placeholder="Область">
+        <div class="row long-row">
+          <input type="text" class="form-input col-sm" placeholder="Район">
+          <input type="text" class="form-input col-sm" placeholder="Город">
+        </div>
+        <div class="row long-row">
+          <input type="text" class="form-input col-sm" placeholder="Телефон">
+          <input type="text" class="form-input col-sm" placeholder="Улица">
+        </div>
+        <div class="row long-row">
+          <input type="text" class="form-input col-sm" placeholder="Телефон">
+          <input type="text" class="form-input col-sm" placeholder="Дом">
+        </div>
+        <div class="row long-row">
+          <input type="text" class="form-input col-sm" placeholder="Корпус">
+          <input type="text" class="form-input col-sm" placeholder="Квартира">
+        </div>
+        </div>
+        <input type="submit" disabled class="register-button" value="Далі">
+      </form>
+    </div>
   </div>
 </main>
+
 <footer class="footer">
   <div class="container">
     <a href="mailto:info@novikredyty.com.ua" class="mail">Написати нам <img src="img/mail.svg" alt="mail"></a>
@@ -135,7 +170,9 @@
 
 <script src="./js/jquery.min.js"></script>
 <script src="./js/main.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 <!-- production-версия, оптимизированная для размера и скорости-->
 </body>
 </html>
