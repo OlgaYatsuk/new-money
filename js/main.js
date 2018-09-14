@@ -204,7 +204,7 @@ $( document ).ready(function() {
   $(function() {
     'use strict';
 
-    var body = $('body');
+    var body = $('js-phone-val');
 
     function goToNextInput(e) {
       var key = e.which,
@@ -245,8 +245,4 @@ $( document ).ready(function() {
     body.on('keydown', 'input', onKeyDown);
     body.on('click', 'input', onFocus);
   });
-
-  $(":input").inputmask();
-
-  $("#phone").inputmask({"mask": "(999) 999-9999"});
 });
