@@ -84,9 +84,16 @@ $( document ).ready(function() {
     for (var i = 0; i < numberOfOptions; i++) {
       $('<li />', {
         text: $this.children('option').eq(i).text(),
-        rel: $this.children('option').eq(i).val()
+        rel: $this.children('option').eq(i).attr('value')
       }).appendTo($list);
     }
+
+    $('li[rel="Трудоустроен"]').on('click', showHidden);
+
+    function showHidden() {
+      $(this).css('color', 'red!important')
+    }
+
 
     var $listItems = $list.children('li');
 
@@ -96,6 +103,7 @@ $( document ).ready(function() {
         $(this).removeClass('active').next('ul.select-options').hide();
       });
       $(this).toggleClass('active').next('ul.select-options').fadeToggle(120);
+      $(this).find($('li[rel="hide"]')).addClass('js-options');
     });
 
     $listItems.click(function(e) {
@@ -103,8 +111,7 @@ $( document ).ready(function() {
       $styledSelect.text($(this).text()).removeClass('active');
       $this.val($(this).attr('rel'));
       $list.hide();
-      $(this).addClass('js-options');
-      //console.log($this.val());
+      // $(this).addClass('js-options');
     });
 
     $(document).click(function() {
@@ -177,6 +184,16 @@ $( document ).ready(function() {
     }
   });
 
+  $('li[rel="js-options"]').on('click', showHidden);
+  $('li[rel="js-revenue"]').on('click', showRevenue);
+
+  function showHidden() {
+    $('.js-hidden-block').show();
+  }
+  function showRevenue() {
+    $('.js-revenue-block').slideDown();
+  }
+
   $('#id-check').on('change', idCheck);
   $('#pass-check').on('change', passCheck);
 
@@ -247,3 +264,4 @@ $( document ).ready(function() {
     body.on('click', 'input', onFocus);
   });
 });
+
