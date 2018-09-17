@@ -103,6 +103,7 @@ $( document ).ready(function() {
       $styledSelect.text($(this).text()).removeClass('active');
       $this.val($(this).attr('rel'));
       $list.hide();
+      $(this).addClass('js-options');
       //console.log($this.val());
     });
 

@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
-<body class="profile is-signed">
+<body class="profile">
 <!--begin header-->
 <div class="header-wrapper">
   <header class="header">
@@ -75,8 +75,8 @@
 <main class="profile profile-1">
   <div class="row">
     <div class="col-sm-3 right-part">
-      <!--<div class="user-photo"></div>-->
-      <header class="header">
+      <div class="user-photo user-photo--desktop"></div>
+      <header class="header header--profile">
         <button class="signed-back"><img src="img/arrow-left.svg" alt=""></button>
         <a href="index.html" class="header-logo"><img src="img/logo-signed.svg" alt="logo"></a>
         <div class="signed">
@@ -123,11 +123,23 @@
               </div>
               </div>
               <fieldset class="col-sm register-form">
+                <div class="edit-input">
                 <input type="text" class="form-input" placeholder="Прізвище">
+                  <span class="edit-icon"><img src="img/edit.svg" alt="" class=""></span>
+                </div>
+                <div class="edit-input">
                 <input type="text" class="form-input" placeholder="Ім'я">
+                  <span class="edit-icon"><img src="img/edit.svg" alt="" class=""></span>
+                </div>
+                <div class="edit-input">
                 <input type="text" class="form-input" placeholder="По-батькові">
+                  <span class="edit-icon"><img src="img/edit.svg" alt="" class=""></span>
+                </div>
                 <div class="row credit-card">
-                  <input type="date" class="form-input col-sm" placeholder="Дата народження">
+                  <div class="edit-input form-input col-sm">
+                  <input type="date" placeholder="Дата народження">
+                    <span class="edit-icon"><img src="img/edit.svg" alt="" class=""></span>
+                  </div>
                   <input type="text" class="form-input col-sm" placeholder="ІПН">
                   <div class="row photo-upload">
                     <input type="file" accept="image/*" class="register-button custom-file-input" id="customFile">
@@ -138,8 +150,14 @@
                   </div>
                 </div>
                 <div class="row">
-                  <input type="text" class="form-input col-sm" placeholder="Телефон">
-                  <input type="text" class="form-input col-sm" placeholder="Email">
+                  <div class="edit-input form-input col-sm">
+                  <input type="text" placeholder="Телефон">
+                    <span class="edit-icon"><img src="img/edit.svg" alt="" class=""></span>
+                  </div>
+                  <div class="edit-input form-input col-sm">
+                  <input type="text" placeholder="Email">
+                  <span class="edit-icon"><img src="img/edit.svg" alt="" class=""></span>
+                </div>
                 </div>
                 <div class="row pass">
                   <input type="file" accept="text/*" class="register-button custom-file-input" id="passport">
