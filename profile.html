@@ -76,7 +76,7 @@
 <main class="profile profile-1">
   <div class="row">
     <div class="col-sm-3 right-part">
-      <div class="user-photo user-photo--desktop"></div>
+      <label for="userPhoto" class="user-photo user-photo--desktop"></label>
       <header class="header header--profile">
         <button class="signed-back"><img src="img/arrow-left.svg" alt=""></button>
         <a href="index.html" class="header-logo"><img src="img/logo-signed.svg" alt="logo"></a>
@@ -85,7 +85,7 @@
         </div>
       </header>
       <ul class="nav nav-pills">
-        <li class="active"><a data-toggle="pill" href="#my-credit" class="js-pill">Мой кредит</a></li>
+        <li class="active"><a data-toggle="pill" href="#my-credit" class="js-pill active">Мой кредит</a></li>
         <li><a data-toggle="pill" href="#my-data" class="js-pill">Мои данные</a></li>
         <li><a data-toggle="pill" href="#bonus" class="js-pill">Бонусы</a></li>
         <li><a data-toggle="pill" href="#cards" class="js-pill">Мои карты</a></li>
@@ -116,10 +116,10 @@
         <div id="my-data" class="tab-pane fade my-data">
           <form action="">
             <div class="row photo-upload">
-              <div class="user-photo"><img src="" alt=""></div>
-              <input type="file" accept="image/*" class="register-button custom-file-input" id="customFile">
+              <label for="userPhoto" class="user-photo"><img src="" alt=""></label>
+              <input type="file" accept="image/*" class="register-button custom-file-input" id="userPhoto">
               <div>
-              <label class="register-button" for="customFile">Загрузить</label>
+              <label class="register-button" for="userPhoto">Загрузить</label>
               <p class="upload-format">1,5 Мб в формате  *.jpeg, *.png, *.tif, *.bmp</p>
               </div>
               </div>
