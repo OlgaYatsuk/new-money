@@ -8,7 +8,7 @@
   <!--<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">-->
   <title>New credit</title>
 
-  <!--<link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,500,600,700,900" rel="stylesheet">-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,500,600,700,900" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
@@ -73,14 +73,24 @@
 
 <!--end header-->
 
-<main class="register card-val">
+<main class="register login">
   <div class="container">
     <div class="row">
+      <div class="col-sm-4">
+        <h6 class="page-heading">Вход</h6>
+      </div>
       <div class="col-sm-5">
-        <h6 class="page-heading">Регистрация</h6>
-        <p class="heading">Верификация платежной карты</p>
-        <p class="text">Для выдачи Вам кредита нам необходимо убедится в коректности данных Вашей платежной карты и в том, что ее держателем явлетесь именно Вы. Нажмите кнопку "далее" и пройдите процедуру верификации карты на странице нашего банка партнера. Важно! Мы не списываем деньги с карты, а лишь проверяем ее принадлежность Вам.</p>
-        <a href="" class="register-button">Далі</a>
+        <form action="" class="register-form">
+          <input type="text" class="form-input" placeholder="Логин (телефон или email)">
+          <input type="text" class="form-input" placeholder="Пароль">
+          <div>
+            <div class="row long-row">
+              <a href="register-1.html" class="form-input col-sm registet-btn">Регистрация</a>
+              <a href="#" class="form-input col-sm pass-btn" >Забыли пароль?</a>
+            </div>
+          </div>
+          <input type="submit" disabled class="register-button" value="Далі">
+        </form>
       </div>
     </div>
   </div>
@@ -126,12 +136,10 @@
 </footer>
 
 <script src="./js/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/bindings/inputmask.binding.min.js"></script>
 <script src="./js/main.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-
 <!-- production-версия, оптимизированная для размера и скорости-->
 </body>
 </html>
