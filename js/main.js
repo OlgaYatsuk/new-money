@@ -154,11 +154,11 @@ $( document ).ready(function() {
     $('.signed-back').on('click', hideMenu);
 
     function hideMenu() {
-      $('.right-part').slideUp();
+      $('.menu-part').slideUp();
     }
 
     function showMenu() {
-      $('.right-part').slideDown();
+      $('.menu-part').slideDown();
     }
   }
 
