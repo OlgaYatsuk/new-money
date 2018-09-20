@@ -148,7 +148,7 @@ $( document ).ready(function() {
 
 
 
-  if ($(window).width() < 800) {
+  if ($(window).width() < 767) {
     $('.js-pill').on('click', hideMenu);
     $('.profile .signed').on('click', showMenu);
     $('.signed-back').on('click', hideMenu);
