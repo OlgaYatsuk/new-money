@@ -96,7 +96,8 @@
     </div>
     <div class="col-sm">
       <div class="tab-content content-part">
-        <div id="my-credit" class="tab-pane fade-in active">
+        <div id="my-credit" class="tab-pane fade-in active my-credit">
+          <div class="credit-history__item credit-history__item--red">
           <p class="profile-label form-label">Номер договора</p>
           <p class="strong-text">000001</p>
           <p class="profile-label form-label">cумма договора</p>
@@ -110,6 +111,7 @@
           </div>
           <p class="profile-label form-label">сумма к погашению</p>
           <p class="strong-text">3 200</p>
+          </div>
           <a href="#" class="register-button">Оплатить кредит</a>
         </div>
 
@@ -174,13 +176,30 @@
                   <input type="text" class="form-input col-sm" placeholder="Кем выдан">
                   <input type="data" class="form-input col-sm" placeholder="Дата выдачи">
                 </div>
+                <div class="row">
+                  <input type="text" class="form-input col-sm" placeholder="Номер ID">
+                  <input type="data" class="form-input col-sm" placeholder="Термiн дії">
+                </div>
               </fieldset>
           </form>
         </div>
         <div id="bonus" class="tab-pane fade left-part">
-          <h3>Бонусы</h3>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.</p>
+          <div class="credit-history__item credit-history__item--red">
+            <p class="profile-label form-label">Номер договора</p>
+            <p class="strong-text">000001</p>
+            <p class="profile-label form-label">cумма договора</p>
+            <p class="strong-text">3 000</p>
+            <p class="profile-label form-label">дата получения</p>
+            <p class="strong-text">15.08.2018</p>
+            <p class="profile-label form-label">дата погашения</p>
+            <div class="row">
+              <p class="strong-text">15.11.2018</p>
+              <a href="#prolangate" class="register-button register-button--prolangate">продлить</a>
+            </div>
+            <p class="profile-label form-label">сумма к погашению</p>
+            <p class="strong-text">3 200</p>
+          </div>
+          <a href="#" class="register-button">Оплатить кредит</a>
         </div>
         <div id="cards" class="tab-pane fade left-part">
           <div class="row add-card">
