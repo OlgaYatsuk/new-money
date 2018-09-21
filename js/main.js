@@ -265,3 +265,7 @@ $( document ).ready(function() {
   });
 });
 
+$('.verified--error').on('click', function (e) {
+  e.preventDefault();
+  $('.verified-error__repeat').fadeIn();
+});

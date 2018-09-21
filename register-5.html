@@ -89,7 +89,7 @@
           <input type="text" class="form-input js-phone-val" placeholder="+ 38 ( 222 ) 111 - 11 -  11" data-mask="+38-099-999-99-99">
           <input type="submit" class="register-button register-button--big" value="Отримати код в смс">
         </form>
-        <form action="">
+        <form action="" class="sms-code">
         <h3 class="form-label">Код из смс:</h3>
         <div id="form"  class="phone-validation">
           <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" class="phone-validation__input"/>
@@ -98,13 +98,16 @@
           <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" class="phone-validation__input"/>
         </div>
           <p class="verified">Телефон подтвержден</p>
-          <button class="verified--error">не прийшов пароль в смс, відправити порторно</button>
+          <div class="verified-error">
+            <button class="verified--error">Не надійшов код? Відправити повторно</button>
+            <p class="verified-error__repeat">код буде надіслано повторно через 5 хв</p>
+          </div>
           <input type="submit" disabled class="register-button" value="Далі">
         </form>
-      </div>
-      <div class="col-sm-5 phone-validation__error">
-        <p>Вы уже зарегистрированы на нашем сайте по этому номеру телефона. Войдите в свой профиль и продолжите оформление заявки</p>
-        <input type="submit" class="register-button" value="Войти">
+        <div class="col-sm phone-validation__error">
+          <p>Вы уже зарегистрированы на нашем сайте по этому номеру телефона. Войдите в свой профиль и продолжите оформление заявки</p>
+          <input type="submit" class="register-button" value="Войти">
+        </div>
       </div>
     </div>
   </div>
