@@ -73,25 +73,32 @@
 
 <!--end header-->
 
-<main class="register login">
+<main class="application">
   <div class="container">
-    <div class="row">
-      <div class="col-sm-4">
-        <h6 class="page-heading">Вход</h6>
+      <h2 class="page-heading">Заявка на позику</h2>
+    <div class="col-sm-6">
+      <div class="application__range">
+        <div class="row"><p class="application__label">Cума позики</p><p class="application__calc">700</p></div>
+        <span class="min">500</span>
+        <span class="max">3000</span>
+        <input type="range" class="form-control-range credit-form__range js-credit-range" value="500" min="500" max="3000" step="0.01">
       </div>
-      <div class="col-sm-5">
-        <form action="" class="register-form">
-          <input type="text" class="form-input" placeholder="Логин (телефон или email)">
-          <input type="text" class="form-input" placeholder="Пароль">
-          <div>
-            <div class="row long-row">
-              <a href="register-1.html" class="form-input col-sm registet-btn">Регистрация</a>
-              <a href="#" class="form-input col-sm pass-btn" >Забыли пароль?</a>
-            </div>
-          </div>
-          <input type="submit" disabled class="register-button" value="Далі">
-        </form>
+      <div class="application__range">
+        <div class="row"><p class="application__label">Період</p><p class="application__calc">20</p></div>
+        <span class="min">1</span>
+        <span class="max">30</span>
+        <input type="range" class="form-control-range credit-form__range js-credit-range" value="1" min="1" max="30" step="1">
       </div>
+      <p for="promo" class="form-label">Промокод :</p>
+      <input id="promo" type="text" class="form-input">
+      <div class="application__info">
+        <div class="row"><p class="application__label">Cума позики</p><p class="application__calc">1 500 <span>грн</span></p></div>
+        <div class="row"><p class="application__label">Термін позики</p><p class="application__calc">20 <span>днів</span></p></div>
+        <div class="row"><p class="application__label">Ви сплатите заа користування</p><p class="application__calc">20 <span>грн</span> </p></div>
+        <div class="row"><p class="application__label">Сума до сплати</p><p class="application__calc">1 520 <span>грн</span></p></div>
+        <div class="row"><p class="application__label">Дата повернення позики</p><p class="application__calc">8.10.2018</p></div>
+      </div>
+      <input type="submit" class="register-button" value="Далі">
     </div>
   </div>
 </main>
@@ -123,7 +130,7 @@
         <div class="footer-list">
           <h6 class="footer-list__heading">Юридична адреса:</h6>
           <p class="footer-list__info capitalize">ТОВ "фінансова компанія "нові кредити"</p>
-          <p class="footer-list__info"> ЄДРПОУ  42152351</p>
+          <p class="footer-list__info"> ЄДРПОУ 42152351</p>
         </div>
       </div>
     </div>

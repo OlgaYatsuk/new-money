@@ -43,8 +43,10 @@ $( document ).ready(function() {
         val = e.target.value;
 
       $(e.target).css({
-        'backgroundSize': (val - min) * 100 / (max - min) + '% 100%'
-      });
+        'background': 'rgba(255, 255, 255, 0.28) linear-gradient(#ababb2, rgba(171, 171, 178, 0.51)) no-repeat',
+        'backgroundSize': (val - min) * 100 / (max - min) + '% 100%',
+
+    });
     }
 
     function reduceValue() {
@@ -269,3 +271,10 @@ $('.verified--error').on('click', function (e) {
   e.preventDefault();
   $('.verified-error__repeat').fadeIn();
 });
+
+$('#verify-phone').on('click', showVerification);
+
+function showVerification (e) {
+  e.preventDefault();
+  $('.phone-val').slideDown();
+}
