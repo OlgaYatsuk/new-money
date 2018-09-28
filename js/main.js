@@ -272,9 +272,9 @@ $('.verified--error').on('click', function (e) {
   $('.verified-error__repeat').fadeIn();
 });
 
-$('#verify-phone').on('click', showVerification);
+$('#verify-phone').on('click', showVerificationPhone);
 
-function showVerification (e) {
+function showVerificationPhone (e) {
   e.preventDefault();
-  $('.phone-val').slideDown();
+  $('.phone-val').slideToggle();
 }
