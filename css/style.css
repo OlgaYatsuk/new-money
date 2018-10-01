@@ -2910,8 +2910,8 @@ main {
 
 .application .credit-form__range::-webkit-slider-thumb {
   background: red !important;
-  width: 30px;
-  height: 30px;
+  width: 30px!important;
+  height: 30px!important;
 }
 
 .application__range {
