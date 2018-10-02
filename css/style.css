@@ -2406,11 +2406,13 @@ main {
 
 .is-signed .credit-card .photo-upload .register-button {
   display: block;
+  margin-bottom: 0!important;
   margin-top: 85px !important;
 }
 
 .is-signed .credit-card .upload-format {
   display: block;
+  margin-left: 50%;
 }
 
 .is-signed .profile .burger {
@@ -2448,6 +2450,10 @@ main {
     margin: 0 auto 40px!important;
     transform: translateX(0)!important;
   }
+}
+
+.row > .edit-input {
+  max-width: 210px;
 }
 
 .my-data .photo-upload .register-button {
