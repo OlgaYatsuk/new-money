@@ -283,3 +283,11 @@ function countSum() {
   let value = $('.js-credit-range-sum').val();
   $('.js-sum').text(value);
 }
+
+
+$('.js-credit-range-date').on('input', countDate);
+
+function countDate() {
+  let value = $('.js-credit-range-date').val();
+  $('.js-date').text(value);
+}
