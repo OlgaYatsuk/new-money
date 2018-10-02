@@ -2439,6 +2439,10 @@ main {
   margin: 0 1% 100px!important;
 }
 
+.my-data .phone-val .register-button {
+  margin: 40px 1% 10px!important;
+}
+
 @media screen and (max-width: 768px) {
   .my-data .register-button {
     margin: 0 auto 40px!important;
