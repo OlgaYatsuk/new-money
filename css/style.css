@@ -10,6 +10,7 @@ body {
   font-family: "Montserrat" !important;
   font-weight: 300;
   animation: fadein 0.5s linear;
+  -webkit-text-size-adjust: none;
 }
 
 @keyframes fadein {
@@ -2186,7 +2187,7 @@ main {
 
 @media screen and (min-width: 768px) {
   .profile .content-part {
-    padding: 93px 10%;
+    padding: 93px 7%;
   }
 }
 
@@ -2910,8 +2911,8 @@ main {
 
 .application .credit-form__range::-webkit-slider-thumb {
   background: red !important;
-  width: 25px!important;
-  height: 25px!important;
+  width: 22px!important;
+  height: 22px!important;
 }
 
 .application__range {
