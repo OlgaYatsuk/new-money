@@ -280,5 +280,6 @@ function showVerificationPhone (e) {
 $('.js-credit-range-sum').on('input', countSum);
 
 function countSum() {
-  $('.js-sum').text($('.js-credit-range-sum').attr('value'));
+  let value = $('.js-credit-range-sum').val();
+  $('.js-sum').text(value);
 }
