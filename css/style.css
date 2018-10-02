@@ -2451,9 +2451,10 @@ main {
     transform: translateX(0)!important;
   }
 }
-
-.row > .edit-input {
-  max-width: 210px;
+@media screen and (min-width: 768px) {
+  .row > .edit-input {
+    max-width: 210px;
+  }
 }
 
 .my-data .photo-upload .register-button {
