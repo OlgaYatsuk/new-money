@@ -2434,6 +2434,10 @@ main {
   justify-content: center;
 }
 
+.my-data .register-button {
+  margin: 0 1% 100px!important;
+}
+
 .my-data .photo-upload .register-button {
   transform: translateX(0) !important;
 }
