@@ -2439,8 +2439,21 @@ main {
   margin: 0 1% 100px!important;
 }
 
+@media screen and (max-width: 768px) {
+  .my-data .register-button {
+    margin: 0 auto 40px!important;
+    transform: translateX(0)!important;
+  }
+}
+
 .my-data .photo-upload .register-button {
   transform: translateX(0) !important;
+}
+
+@media screen and (min-width: 768px) {
+  .my-data .photo-upload .register-button {
+    transform: translateX(50%) !important;
+  }
 }
 
 .id-num {
