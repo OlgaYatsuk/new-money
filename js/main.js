@@ -277,7 +277,7 @@ function showVerificationPhone (e) {
   $('.phone-val').slideToggle();
 }
 
-$('.js-credit-range-sum').on('change', countSum);
+$('.js-credit-range-sum').on('input', countSum);
 
 function countSum() {
   $('.js-sum').text($('.js-credit-range-sum').attr('value'));
