@@ -2809,6 +2809,12 @@ main {
   margin-top: 15px;
 }
 
+
+.credit-history__item--prolangate .register-button {
+  margin: 20px 0 0!important;
+
+
+}
 @media screen and (min-width: 991px) {
   .credit-history__item--apply .register-button {
     margin: 0 !important;
