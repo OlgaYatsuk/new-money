@@ -2597,10 +2597,6 @@ main {
   margin: 65px 0 0 10px;
 }
 
-#prolangate .application__label {
-  min-width: 100px;
-}
-
 @media screen and (min-width: 768px) {
   #prolangate .application__label {
     margin-right: 20px;
