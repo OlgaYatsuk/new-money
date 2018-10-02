@@ -2504,11 +2504,6 @@ main {
   display: none;
 }
 
-.my-credit .credit-history__item,
-#bonus .credit-history__item {
-  border: 0;
-}
-
 .my-credit__item {
   display: -ms-flexbox;
   display: flex;
