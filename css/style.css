@@ -2193,6 +2193,7 @@ main {
 
 .profile .content-part .row {
   margin-left: 0;
+  width: 100%;
 }
 
 .profile .content-part .user-photo {
