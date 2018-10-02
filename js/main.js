@@ -18,7 +18,6 @@ $( document ).ready(function() {
     $creditInput.val($creditRange.attr('value'));
 
     $creditRange.on('input', function(){
-      //monparent=$(this).parent();
       monparent=this.parentNode;
 
       value=$(monparent).find($creditInput);
@@ -30,7 +29,6 @@ $( document ).ready(function() {
       $creditRange=$(monparent).find('.input-range');
       $($creditRange).val(this.value);
     });
-
 
     function addValue() {
       let value = $creditRange.val();
@@ -277,4 +275,10 @@ $('#verify-phone').on('click', showVerificationPhone);
 function showVerificationPhone (e) {
   e.preventDefault();
   $('.phone-val').slideToggle();
+}
+
+$('.js-credit-range-sum').on('change', countSum);
+
+function countSum() {
+  $('.js-sum').text($('.js-credit-range-sum').attr('value'));
 }
